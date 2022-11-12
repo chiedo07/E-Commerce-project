@@ -19,5 +19,4 @@ function showslides(x){
         thumb[i].className = thumb[i].className.replace(" active","");}
      slider[slideIndex-1].style.display = "block";
      thumb[slideIndex-1].className += "active";
-     
 }
