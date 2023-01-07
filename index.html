@@ -27,13 +27,25 @@
          </nav>
          <div class="newdiv">
             <div id="cart">
-               <img src="images/icon-cart.svg" alt="icon-cart">
+               <div class="basket">
+               <img src="images/icon-cart.svg" alt="icon-cart"></div>
                <div id="img-ava">
                  <img src="images/image-avatar.png" alt="image-avatar">
                </div>
             </div>
          </div>
       </header>
+      <div class="CartContainer">
+         <div id ="root"></div>
+         <div class="sider">
+         <div class="MyCart">MyCart</div>
+         <div class="CartItem">Your cart is empty</div>
+         <div class="CartFoot">
+            <h3>Total</h3>
+            <h2 class="CartTotal">$0.00</h2>
+         </div>
+         </div>
+         </div>
      <!--product containers for screens-->
      <div class="container">
          <div class="mySlides" style="display:none;">
@@ -64,12 +76,12 @@
                                <span id ="cnt">0</span>
                                <span id ="btn-inc">+</span>
                            </div>
-                           <button class="button"><img src="./images/icon-cart.svg" alt="icon-cart">Add to cart</button>
+                           <button class="button" onclick="AddToCart"><img src="./images/icon-cart.svg" alt="icon-cart">Add to cart</button>
                          </div>
            </div>
          <a class="prev" onclick="incslide(-1)"><img src="images/icon-previous.svg" alt=""></a>
          <a class="next" onclick="incslide(1)"><img src="images/icon-next.svg" alt=""></a>
-         
+         <!--lightbox-->
          <div id="lightbox" style="display:none;">
             <span class="CloseLight" onclick="box()">&times;</span>
             <div class="box-light">
@@ -101,14 +113,8 @@
             <a class="prev" onclick="incslide(-1)"><img src="images/icon-previous.svg" alt=""></a>
             <a class="next" onclick="incslide(1)"><img src="images/icon-next.svg" alt=""></a>
          </div>
-
-
-
-
-
-
-
-
+            
+         <!--small screen-->
          <div class="item-list" style="height:90px;">
             <div class="thumb">
                 <div>              
@@ -128,14 +134,14 @@
          <p>These low-profile sneakers are your perfect casual wear
          companion. Featuring a durable rubber outer sole. they'll
          withstand everything the weather can offer.</p>
-         <span class="value">$125.00</span>
+         <span class="value3" >$125.00</span>
          <span class="value1">50%</span>
          <br>
          <span class="value2">$250.00</span>
          <div class="rbc">
            <div class="counter">
                <div id="BtDec">-</div>
-               <div id="val">1</div>
+               <div id="val">0</div>
                <div id="BtInc">+</div>
             </div>
             <button class="button"><img src="./images/icon-cart.svg" alt="icon-cart">Add to cart</button>

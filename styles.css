@@ -36,6 +36,49 @@ header img{
     max-height:0;
     transition:max-height .5s ease-out;
 }
+.basket{
+    padding-top:1px;
+}
+.CartContainer{
+    display: flex;
+    width:50%;
+    margin-bottom:30px;
+    margin:12%;
+    height:200px;
+    margin-left:500px;
+}
+#root{
+    width:60%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.sider{
+ width:100%;
+ border-radius:4px;
+ background-color:#fafad2;
+ margin-left:20px;
+ padding:15px;
+ text-align:center;
+ border: 3px solid goldenrod;
+}
+.MyCart{
+    background-color:goldenrod;
+    border-radius:4px;
+    display: flex;
+    align-items: center;
+    padding:10px;
+    color: black;
+    height:20px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.CartFoot{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid grey;
+    padding:10px 0px;
+    margin:20px 0px;
+}
   header #cart {
    float: right;
    margin-right:10px;
@@ -492,6 +535,9 @@ cursor: pointer;
     }
 }
 @media (max-width:930px){
+    header img{
+        padding-left:8px;
+    }
     .flex-container{
         margin-top:1px;
     }
@@ -502,15 +548,57 @@ cursor: pointer;
     .newdiv{
         display: none;
     }
+    .CartContainer{
+        display: flex;
+        width:100%;
+        margin-bottom:30px;
+        margin:12%;
+        height:200px;
+        margin-left:10px;
+    }
+    #root{
+        width:60%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .new1{
+        margin-left:20px;
+    }
+    .sider{
+     width:1000px;
+     border-radius:4px;
+     background-color:#fafad2;
+     margin-left:2px;
+     padding:15px;
+     text-align:center;
+    }
+    .MyCart{
+        background-color:goldenrod;
+        border-radius:4px;
+        display: flex;
+        align-items: center;
+        padding:10px;
+        color: black;
+        height:20px;
+        font-size: larger;
+        font-weight: bolder;
+    }
+    .CartFoot{
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid grey;
+        padding:10px 0px;
+        margin:20px 0px;
+    }
     .flex-container{
         display:none;
     }
     .button{
-        width:90%;
+        width:100%;
         margin-left:50px;
         margin-right:100px;
         margin-top:4px;
-        height:60px;
+        height:90%;
         font-size:20px;
         font-weight:bold;
     }
@@ -541,7 +629,6 @@ cursor: pointer;
     }
     .next {
         right:69px;
-        
       }
       .container img{
         vertical-align:middle;
@@ -565,7 +652,7 @@ cursor: pointer;
         width:100%;
         border-radius:17px;
     }
-    .value{
+    .value3{
         font-weight: bolder;
          font-size:30px;
     }
@@ -595,12 +682,28 @@ cursor: pointer;
             padding-top:40px;
             margin-left:0px;
             padding-left:4px;
-            
         }
 }
 @media (max-width:280px){
     .next{
         right:1px;
+    }
+    header{
+        width:400px;
+        overflow:none;
+    }
+    header img{
+        padding-left:8px;
+    }
+    .flex-container{
+        margin-top:1px;
+    }
+    .avat{
+        height:25px;
+        left:1px;
+    }
+    .newdiv{
+        display: none;
     }
 }
 /* surface pro*/
