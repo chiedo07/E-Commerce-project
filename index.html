@@ -13,7 +13,7 @@
  <body>
        <!--header section-->
       <header>
-         <img src="./images/logo.svg" alt="logo"><img src="./images/icon-cart.svg" alt="icon-cart" class="avat"><img src="./images/image-avatar.png" alt="image-avatar" class="avat">
+         <img src="./images/logo.svg" alt="logo"><img src="./images/icon-cart.svg" alt="icon-cart" class="avat" id="redone" onclick="display()" style="background-color: darkgreen;"><span id ="small-count">0</span><img src="./images/image-avatar.png" alt="image-avatar" class="avat">
          <input type="checkbox" class="side-bar" id="side-bar"/>
          <label class="hamb" for="side-bar"><span class="hamburger"></span></label>
          <nav id="hdr">
@@ -26,29 +26,26 @@
             </ul>
          </nav>
          <div class="newdiv">
+            <div id="cart-count" id="cartSmall">0</div>
             <div id="cart">
                <div class="basket">
-               <img src="images/icon-cart.svg" alt="icon-cart"></div>
-               <div id="img-ava">
+                  <img src="images/icon-cart.svg" alt="icon-cart" id="redo" onclick="display()"></div>
+                  <div id="img-ava">
                  <img src="images/image-avatar.png" alt="image-avatar">
                </div>
             </div>
          </div>
       </header>
-      <div class="CartContainer">
-         <div id ="root"></div>
+      <div class="CartContainer" id="cartIndex">
+         <div id ="root"><span class="cartclose" onclick="CloseCart()"><img src="./images/icon-close.svg" alt="close"></span></div>
          <div class="sider">
-         <div class="MyCart">MyCart</div>
-         <div class="CartItem">Your cart is empty</div>
-         <div class="CartFoot">
-            <h3>Total</h3>
-            <h2 class="CartTotal">$0.00</h2>
+            <div class="MyCart">MyCart</div>
+            <div class="CartItem" id="CartItem"><p id="demo">Your Cart Is Empty</p></div>
          </div>
-         </div>
-         </div>
+      </div>
      <!--product containers for screens-->
-     <div class="container">
-         <div class="mySlides" style="display:none;">
+     <div class="container" id = "contain">
+         <div class="mySlides" id="child" style="display:none;">
            <img src="images/image-product-1.jpg"  onclick="OpenLight()" width="400" alt="thumb">
          </div>
         <div class="mySlides" style="display:none;">
@@ -73,10 +70,10 @@
                         <div class="rbc">
                            <div class="counter">
                                <span id="btn-dec">-</span>
-                               <span id ="cnt">0</span>
+                               <span id ="cnt">1</span>
                                <span id ="btn-inc">+</span>
                            </div>
-                           <button class="button" onclick="AddToCart"><img src="./images/icon-cart.svg" alt="icon-cart">Add to cart</button>
+                           <button class="button" onclick="AddToCart(child)"><img src="./images/icon-cart.svg" alt="icon-cart">Add to cart</button>
                          </div>
            </div>
          <a class="prev" onclick="incslide(-1)"><img src="images/icon-previous.svg" alt=""></a>
@@ -99,7 +96,7 @@
                </div>
             </div>
             <div class="item-lists" style="height:90px;">
-               <div class="thumb">
+               <div class="thumb" id="thumb">
                    <div>              
                       <img src="images/image-product-1-thumbnail.jpg" alt="" class="thumn-prods" onclick="currentslides(1)"></div>
                    <div class="thumn-prod"> 
@@ -116,7 +113,7 @@
             
          <!--small screen-->
          <div class="item-list" style="height:90px;">
-            <div class="thumb">
+            <div class="thumb" id="child1">
                 <div>              
                    <img src="images/image-product-1-thumbnail.jpg" alt="" class="thumn-prod" onclick="currentslide(1)"></div>
                 <div class="thumn-prod"> 
@@ -128,7 +125,7 @@
               </div>
           </div>
       </div>
-     <div class="new1">
+     <div class="new1" id="new1">
          <h3>SNEAKERS COMPANY</h3>
          <h2>FALL LIMITED EDITION SNEAKERS</h2>
          <p>These low-profile sneakers are your perfect casual wear
@@ -141,10 +138,11 @@
          <div class="rbc">
            <div class="counter">
                <div id="BtDec">-</div>
-               <div id="val">0</div>
+               <div id="val">1</div>
                <div id="BtInc">+</div>
             </div>
-            <button class="button"><img src="./images/icon-cart.svg" alt="icon-cart">Add to cart</button>
+            <button class="button" onclick="AddToCart(child1)"><img src="./images/icon-cart.svg" alt="icon-cart">Add to cart</button>
+            <div id = "items"></div>
          </div>
      </div>
    <footer></footer>
