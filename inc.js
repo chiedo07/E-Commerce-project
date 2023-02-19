@@ -137,3 +137,13 @@ function display(){
 function CloseCart(){
    document.getElementById("cartIndex").style.display = "none";
 };
+function Displayout(){
+   document.getElementById("cartIndex").style.display="none";
+   document.getElementsByClassName("CartContainer").style.display ="none";
+}
+function display1(){
+   document.getElementById("cartIndex").style.display="block";
+   document.getElementsByClassName("CartContainer").style.display ="block";
+   document.getElementById("cartIndex").style.width="100%";
+   document.getElementsByClassName("CartContainer").style.width ="auto";
+};
