@@ -600,6 +600,15 @@ cursor: pointer;
         height:340px;
       }
 }
+@media(min-width:1280px){
+    .CartContainer{
+        z-index:9;
+        position:fixed;
+        margin-left:700px;
+        margin-top:250px;
+        width:360px;
+    }
+}
 @media (min-width:1024px)and (max-width:1030px){
     .new{
         width:440px;
