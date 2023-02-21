@@ -243,6 +243,11 @@ right:1px;
     display:flex; 
 
 }
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+    word-spacing:7px;
+}
 .container{
     margin-top:220px;
     width:100%;
@@ -334,6 +339,7 @@ right:1px;
 .thumb{
    display: flex;
    flex-direction:row;
+   margin-left:-80px;
 
 }
 .thumb img{
