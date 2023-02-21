@@ -324,6 +324,7 @@ p{
     border:none;
     width:410px;
     font-size:16px;
+    color:wheat;
 }
 .rbc{
     display: flex;
@@ -767,14 +768,14 @@ cursor: pointer;
     .flex-container{
         display:none;
     }
-    .button{
-        width:100%;
-        margin-left:50px;
-        margin-right:100px;
-        margin-top:4px;
-        height:90%;
-        font-size:20px;
-        font-weight:bold;
+    .button1{
+        background-color:rgba(236, 157, 60, 0.945); 
+        color: wheat;
+        border-radius:5px;
+        cursor: pointer;
+        border-radius:5px;
+        border:none;
+        font-size:19px;
     }
     #lightbox{
         display:none;
