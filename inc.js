@@ -1,7 +1,7 @@
 const plus = document.querySelector("#BtInc"),
 subs = document.querySelector("#BtDec"),
 num = document.querySelector("#val");
-valz = document.querySelector(".value3");
+val = document.querySelector(".value");
  
  
 let x = 1;
@@ -15,7 +15,7 @@ plus.addEventListener("click" , () => {
    console.log(x);
 
    b = x * 125;
-   valz.innerHTML = new Intl.NumberFormat('en-US',options).format(b);
+   val.innerHTML = new Intl.NumberFormat('en-US',options).format(b);
    console.log(val);
 
 
@@ -31,7 +31,7 @@ subs.addEventListener("click" , () => {
       console.log(x);
        
       b = x * 125;
-      valz.innerHTML = new Intl.NumberFormat('en-US',options).format(b);
+      val.innerHTML = new Intl.NumberFormat('en-US',options).format(b);
       console.log(val);
   
 
