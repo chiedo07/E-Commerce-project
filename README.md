@@ -36,7 +36,82 @@ especially devices that needed the hamburger design that contains the navigation
  - javascript
  -Font Awesome
  ### What I Learnt
- 
+I learnt alot while developing this website including learning that certain css characters could be set to negative, getting more familliar with css
+selectors ("+","~",">") as well as getting more confident when handling javascript eventhandlers and functions.
+below are some of the code snippets that helped improved my coding.
+ ``` CSS
+ .CartItem ,.tittle{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:inherit;
+    grid-row:700px;
+    height:inherit;
+    background-color:#fafad2;
+    border: 3px solid goldenrod;
+}
+.CartImg > img{
+    width:100px;
+    right:50px;
+    margin-right:0px;
+    margin-top:1px;
+    margin-left:2px;
+    display: block;
+}
+.side-bar:checked ~ #hdr{
+    max-height:100%;
+}
+.side-bar:checked ~ .hamb .hamburger{
+    background: transparent;
+}
+.side-bar:checked ~ .hamb .hamburger::after{
+transform: rotate(45deg);
+top:0;
+left:0px;
+right:1px;
+}
+```
+``` JS
+sub.addEventListener("click" , () => {
+   if(x > 1){
+      x--;
+   
+     value.innerText = x;
+
+      console.log(x);
+      b = x * 125;
+    val.innerHTML = new Intl.NumberFormat('en-US',options).format(b);
+    console.log(val);
+   } 
+});
+deleteBtn.setAttribute("onclick", 'del('+AddCartItems+')');
+  var cartitems = document.getElementById('CartItem');
+  ItemSelect.append(img) ;
+  ItemSelect.append(title);
+  ItemSelect.append(label);
+  ItemSelect.append(deleteBtn);
+  cartitems.append(ItemSelect);
+  if (AddCartItems > 0) {
+   document.getElementById("demo").style.display = "none";
+} 
+else{
+   msg = "Your Cart Is Empty"
+   document.getElementById("cartitem").innerText = msg;
+   document.getElementById("small-count").innerText = msg;
+}
+```
+### Continued Development
+I will like to add some JS frameworks to my prroject as well as creating pay assess for users so they can be able to purchase 
+the product and have it delivered as well as returns if need be. and also creating a feedback session for users.
+### Responsive Testing
+I used Google Chrome's Development tools to constantly test each change that I made to my website and to ensure that it appeared in the desired way on different screen sizes. 
+I also tested my website on different screen sizes (mobile, tablet and desktop) to ensure it appeared in the desired way on different devices.
+To test my whole website, I went through each page, feature by feature.
+## Author
+- Website - [Nlemadim Chiedozie](https://github.com/chiedo07/E-Commerce-project)
+- Frontend Mentor - [Scott Nnaghor]
+
+
  
  
  
